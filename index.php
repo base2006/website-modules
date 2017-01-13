@@ -15,6 +15,8 @@
 	<body>
 		<?php include 'bx-slider/index.php'; ?>
 
+		<?php include 'fuzzy-finder/index.php'; ?>
+
 		<div class="container col-md-6 col-md-offset-3">
 			<?php include 'contact-form/index.php'; ?>
 		</div>
