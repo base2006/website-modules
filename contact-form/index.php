@@ -3,7 +3,7 @@ function e($string) {
     return htmlentities($string, ENT_QUOTES, 'UTF-8', false);
 }
 ?>
-<form class="contact-form" action="contact-form/scripts/mailer.php" method="post">
+<form class="contact-form" action="contact-form/lib/mailer.php" method="post">
     <div id="form-messages" class="alert"></div>
 
     <div class="form-group">
@@ -30,4 +30,4 @@ function e($string) {
     <input type="submit" class="btn btn-success" value="Send message">
 
 </form>
-<script src="contact-form/scripts/process.js" charset="utf-8"></script>
+<script src="contact-form/lib/process.js" charset="utf-8"></script>
