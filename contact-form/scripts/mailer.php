@@ -10,9 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$message = trim($_POST["message"]);
 	// $secret = "YOUR-RECAPTCHA-SECRET"; // TODO: Update this to your desired email address.
 	$secret = "6LeMQhgTAAAAABoI1CMC2jxbkilJUPjDe24UyP7J";
-	$response = $_POST["captcha"];
-	$verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}");
-	$captcha_success = json_decode($verify);
+	$captcha = $_POST["captcha"];
+	$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$captcha}"));
 
     if (empty($name)) {
         $errors['name'] = 'Please fill in your name';
@@ -28,9 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors['message'] = 'Please enter a message to send';
     }
 
-	if (empty($response)) {
+	if (empty($captcha)) {
 		$errors['recaptcha'] = 'Please enter the reCAPTCHA';
-	} else if ($captcha_success->success==false) {
+	} else if ($response->success == false) {
 	  	$errors['recaptcha'] = 'ReCAPTCHA is not valid';
 	}
 

@@ -26,7 +26,6 @@ $(function() {
         .done(function(response) {
             $('input[type="text"], textarea, .g-recaptcha').parent().addClass('has-success');
             $.each(response, function(i, v) {
-                console.log(i + ' => ' + v);
                 var msg = '<div class="form-control-feedback">' + v + '</div>';
                 $('input[name="' + i + '"], textarea[name="' + i + '"]').parent().removeClass('has-success');
                 $('input[name="' + i + '"], textarea[name="' + i + '"]').parent().addClass('has-danger');
