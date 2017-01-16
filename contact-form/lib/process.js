@@ -24,7 +24,7 @@ $(function() {
 			}
         })
         .done(function(response) {
-            $('input[type="text"], textarea, .g-recaptcha').parent().addClass('has-success');
+            $('.contact-form input[type="text"], .contact-form textarea, .contact-form .g-recaptcha').parent().addClass('has-success');
             $.each(response, function(i, v) {
                 var msg = '<div class="form-control-feedback">' + v + '</div>';
                 $('input[name="' + i + '"], textarea[name="' + i + '"]').parent().removeClass('has-success');
@@ -55,6 +55,6 @@ $(function() {
 });
 
 function resetErrors() {
-    $('form input, form textarea').parent().removeClass('has-danger').removeClass('has-success');
+    $('.contact-form input, .contact-form textarea').parent().removeClass('has-danger').removeClass('has-success');
     $('div.form-control-feedback').remove();
 }
