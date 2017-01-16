@@ -23,8 +23,7 @@ function e($string) {
 
 	<div class="form-group">
 		<!-- TODO: put <script src='https://www.google.com/recaptcha/api.js'></script> before closing head tag -->
-	    <!-- <div class="g-recaptcha" data-sitekey="SITE-KEY-HERE"></div> -->
-	    <div class="g-recaptcha" data-sitekey="6LeMQhgTAAAAAG1Dl2Is8XzbMjIkMv3SETGfPqRw"></div>
+	    <div class="g-recaptcha" data-sitekey="SITE-KEY-HERE"></div>
 	</div>
 
     <input type="submit" class="btn btn-success" value="Send message">
