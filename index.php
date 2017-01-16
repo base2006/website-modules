@@ -11,13 +11,26 @@
 		<link href="bx-slider/lib/jquery.bxslider.css" rel="stylesheet" />
 		<!-- reCAPTCHA js -->
 		<script src='https://www.google.com/recaptcha/api.js'></script>
+
+		<style media="screen">
+			#map {
+				height: 400px;
+				width: 100%;
+			}
+		</style>
 	</head>
 	<body>
 		<?php include 'bx-slider/index.php'; ?>
 
-		<?php include 'fuzzy-finder/index.php'; ?>
-
 		<div class="container col-md-6 col-md-offset-3">
+			<br>
+			<?php include 'fuzzy-finder/index.php'; ?>
+			<br>
+			<hr>
+			<br>
+			<?php include 'google-maps/index.php'; ?>
+			<br>
+			<hr>
 			<?php include 'contact-form/index.php'; ?>
 		</div>
 
