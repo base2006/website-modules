@@ -7,5 +7,5 @@
 	</ul>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.5.0/fuse.min.js"></script>
-<script src="fuzzy-finder/lib/fuzzy-finder.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.5.0/fuse.min.js"></script>
+<script defer src="fuzzy-finder/lib/fuzzy-finder.js"></script>

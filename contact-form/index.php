@@ -29,4 +29,4 @@ function e($string) {
     <input type="submit" class="btn btn-success" value="Send message">
 
 </form>
-<script src="contact-form/lib/process.js" charset="utf-8"></script>
+<script defer src="contact-form/lib/process.js" charset="utf-8"></script>

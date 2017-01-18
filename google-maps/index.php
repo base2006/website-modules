@@ -1,4 +1,6 @@
 <div id="map"></div>
+<!-- TODO: fill in api key -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=API-KEY-HERE&callback=initMap"></script>
 <script>
   function initMap() {
 	var amsterdam = {lat: 52.374421, lng: 4.903141};
@@ -32,4 +34,3 @@
 	});
   }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfm3fiwmCcudRaQYK-HVCnEW_i6ylGX3k&callback=initMap"></script>
