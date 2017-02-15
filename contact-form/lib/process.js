@@ -38,10 +38,10 @@ $(function() {
             });
 
             if (response.success) {
-                $('#form-messages').addClass('alert-success').text(response.success)
+                $('#form-messages').addClass('alert-success').text(response.success);
                 $('.form-group, input[type="submit"]').remove();
             } else if (response.error) {
-				$('#form-messages').addClass('alert-danger').text(response.error)
+				$('#form-messages').addClass('alert-danger').text(response.error);
                 $('.form-group, input[type="submit"]').remove();
             }
         })

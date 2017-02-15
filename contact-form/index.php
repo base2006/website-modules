@@ -23,6 +23,9 @@ function e($string) {
 
 	<div class="form-group">
 		<!-- TODO: put <script src='https://www.google.com/recaptcha/api.js'></script> before closing head tag -->
+		<!-- TODO: Enter site key below -->
+		<!-- TODO: Enter secret key in lib/mailer.php -->
+		<!-- TODO: Change email address in lib/mailer.php -->
 	    <div class="g-recaptcha" data-sitekey="SITE-KEY-HERE"></div>
 	</div>
 

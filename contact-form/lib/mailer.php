@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$name = str_replace(array("\r","\n"),array(" "," "),$name);
 	$email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 	$message = trim($_POST["message"]);
-	// $secret = "YOUR-RECAPTCHA-SECRET"; // TODO: Update this to your desired email address.
+	// $secret = "YOUR-RECAPTCHA-SECRET"; // TODO: Update this to recaptcha secret.
 	$secret = "6LeMQhgTAAAAABoI1CMC2jxbkilJUPjDe24UyP7J";
 	$captcha = $_POST["captcha"];
 	$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$captcha}"));
